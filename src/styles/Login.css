@@ -1,0 +1,161 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Remove Scrollbar */
+body {
+  -ms-overflow-style: none;  /* Hide scrollbar for Internet Explorer and Edge */
+  scrollbar-width: none;     /* Hide scrollbar for Firefox */
+  overflow: hidden;          /* Disable scrolling */
+}
+
+body::-webkit-scrollbar {
+  display: none;  /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+/* Flexbox Utility */
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container */
+.container {
+  padding: 0 15px;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+
+/* Resume Page */
+.resume-page {
+  flex-direction: column;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Header Text */
+.text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.text h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1877f2;
+}
+
+.text p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input Styling */
+form input {
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0 14px;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #1877f2;
+}
+
+/* Placeholder Styling */
+::placeholder {
+  color: #aaa;
+}
+
+/* Link Section */
+.link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Login Button */
+.link .Elogin {
+  background-color: #1877f2;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.link .Elogin:hover {
+  background-color: #0c2d48;
+}
+
+/* Forgot Password Link */
+.link .forgot {
+  color: #1877f2;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.link .forgot:hover {
+  text-decoration: underline;
+}
+
+/* Create Account Button */
+.button {
+  text-align: center;
+}
+
+.button a {
+  display: inline-block;
+  background-color: #05569d;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button a:hover {
+  background-color: #003060;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .resume-page {
+    padding: 20px;
+  }
+
+  .link .Elogin, .button a {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}

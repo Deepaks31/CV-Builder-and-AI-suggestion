@@ -1,0 +1,154 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Flexbox Utility */ 
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+/* Container */
+.container {
+  padding: 0 300px 100px;
+  min-height: 100vh;
+  justify-content: center;
+  background: #f0f2f5;
+}
+
+/* Signin Page */
+.signin-page {
+  justify-content: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Label Styling */
+form label {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Input Styling */
+form input {
+  height: 50px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  padding: 0 14px;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #1877f2;
+}
+
+/* Placeholder Styling */
+::placeholder {
+  color: #777;
+  font-size: 1rem;
+}
+
+/* Link Section */
+.link {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+
+/* Submit Button */
+.link .login {
+  background-color: #1877f2;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.link .login:hover {
+  background-color: #0c2d48;
+}
+
+/* Forgot Password Link */
+.link .forgot {
+  color: #1877f2;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.link .forgot:hover {
+  text-decoration: underline;
+}
+
+/* Divider */
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/* Bottom Link */
+.button {
+  text-align: center;
+}
+
+.button a {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #05569d;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button a:hover {
+  background-color: #003060;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  form {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .link .login, .button a {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
