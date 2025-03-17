@@ -5,6 +5,7 @@ import Signup from './components/Signup';
 import Navbar from './components/Navbar';
 import Templates from './components/Templates';
 import ResumeEditor from './components/ResumeEditor';
+import Dashboard from './components/Dashboard';
 import './styles/Home.css';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/templates" element={<Templates />} />
           <Route path="/editor/:id" element={<ResumeEditor />} />
+          <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
       </div>
     </Router>

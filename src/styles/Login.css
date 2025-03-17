@@ -159,3 +159,34 @@ form input:focus {
     padding: 10px;
   }
 }
+
+.linkedin-login {
+  margin-top: 20px;
+}
+
+.linkedin-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #005f87;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.linkedin-btn img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.linkedin-btn:hover {
+  background-color: #2b7ea2;
+}
+

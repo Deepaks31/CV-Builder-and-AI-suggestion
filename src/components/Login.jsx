@@ -12,6 +12,11 @@ const Login = () => {
     // Add login logic here
   };
 
+  const handleLinkedInLogin = () => {
+    // Redirect to LinkedIn OAuth endpoint
+    window.location.href = 'http://localhost:3000/auth/linkedin';
+  };
+
   return (
     <div className="container flex">
       <div className="resume-page flex">
@@ -42,6 +47,14 @@ const Login = () => {
             <a href="/signup">Create new account</a>
           </div>
         </form>
+
+        {/* LinkedIn Login Button */}
+        <div className="linkedin-login">
+          <button onClick={handleLinkedInLogin} className="linkedin-btn">
+            <img src="/assets/linkedin.png" alt="LinkedIn" />
+            Sign in with LinkedIn
+          </button>
+        </div>
       </div>
     </div>
   );
